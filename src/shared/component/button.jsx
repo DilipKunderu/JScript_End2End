@@ -8,7 +8,13 @@ type Props = {
 }
 
 const button = ({ label, handleClick }: Props) => (
-  <button onClick={handleClick}>{label}</button>
+  <button
+    onClick={handleClick}
+    className="btn btn-primary"
+    type="button"
+  >
+    {label}
+  </button>
 )
 
 export default button
